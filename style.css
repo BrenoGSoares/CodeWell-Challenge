@@ -64,10 +64,75 @@ li {
     gap: 2.75rem;
 }
 
-#nav>ul>li {
+#nav ul li {
     font-size: 18px;
     padding: 1rem 0rem;
+    cursor: pointer;
+}
 
+/* ******** menu ********* */
+
+.menu-hidden {
+    position: absolute;
+    width: 26rem;
+    height: 19rem;
+    margin-top: 4rem;
+    margin-left: -2.75rem;
+    background-color: var(--menu-background-color);
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.menu-hidden::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 75px;
+    height: 15px;
+    width: 15px;
+    background-color: var(--menu-background-color);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.menu-list-hidden {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+    border-radius: 10px;
+}
+
+.menu-list-hidden li {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: -0.3rem;
+    margin-bottom: -2rem;
+
+}
+
+.menu-item-hidden {
+    margin: 0 0.75rem;
+}
+
+.menu-item-hidden h5 {
+    color: var(--button-color);
+}
+
+.menu-item-hidden p {
+    font-size: .9rem;
+    color: var(--menu-font-color);
+    font-stretch: wider;
+    line-height: 1.25;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /********** Content *********/
