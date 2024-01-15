@@ -25,14 +25,17 @@ body {
 
 }
 
-a {
+a,
+p {
     text-decoration: none;
+    color: var(--menu-font-color);
 }
 
 ul,
 li {
     list-style: none;
     margin: 0;
+    color: var(--menu-font-color);
 }
 
 /* ****** btns ******* */
@@ -50,18 +53,18 @@ li {
 
 /* ******** Nav ******* */
 
-.nav {
+#nav {
     display: flex;
     justify-content: space-between;
     margin: 2rem 0 4rem 0;
 }
 
-.nav ul {
+#nav ul {
     display: flex;
     gap: 2.75rem;
 }
 
-.nav>ul>li {
+#nav>ul>li {
     font-size: 18px;
     padding: 1rem 0rem;
 
@@ -123,4 +126,17 @@ li {
 
 .info-list ul li {
     margin: 0 0.25rem;
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.icons img {
+    padding: 1rem;
+    margin: 1rem;
 }
