@@ -277,16 +277,18 @@ li {
         right: 0.9rem;
     }
 
-    .menu-hidden-mobile ul {
+    .list-options {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-hidden-mobile li {
         display: flex;
         align-items: start;
     }
+
 
     .menu-list-hidden-mobile li img {
         margin-right: 1rem;

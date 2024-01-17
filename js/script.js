@@ -10,7 +10,7 @@ const subtitle = document.querySelectorAll('.subtitle')
 const title = document.querySelector('.title')
 
 productsMenu.addEventListener('click', () => {
-  menu.classList.toggle('active')
+  menu.classList.toggle('disable')
 })
 
 openMenu.addEventListener('click', () => {
