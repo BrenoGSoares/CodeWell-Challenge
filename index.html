@@ -11,7 +11,7 @@
 <body>
     <nav id="nav">
         <img src="/Assets/Logo.svg" alt="">
-        <ul>
+        <ul class="nav-menu">
             <li class="menu-list item-1">Products</li>
             <div class="menu-hidden">
                 <ul class="menu-list-hidden">
@@ -44,8 +44,48 @@
             <li class="menu-list item-4">Other</li>
         </ul>
         <ul>
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#" class="primary-btn">Try for free</a></li>
+            <li class="menu-list"><a href="#">Sign in</a></li>
+            <li class="menu-list"><a href="#" class="primary-btn">Try for free</a></li>
+        </ul>
+    </nav>
+    <nav id="nav-mobile">
+        <img src="/Assets/Logo.svg" alt="">
+        <ul>
+            <li class="menu-icon"><img src="Assets/Menu.svg" alt=""></li>
+            <div class="menu-hidden-mobile">
+                <ul>
+                    <div class="close-icon">
+                        <img src="Assets/Close.svg" alt="">
+                    </div>
+                    <li class="menu-list-mobile item-1">Products</li>
+                    <!-- <ul class="menu-list-hidden">
+                            <li><img src="Assets/Spense_Icon.svg" alt="">
+                                <div class="menu-item-hidden">
+                                    <h5>Spense</h5>
+                                    <p>spense is landing page for writers.
+                                        Greate for practicing absolute postioning
+                                        and flex layouts</p>
+                                    </div>
+                                </li>
+                                <li><img src="Assets/Fiber_Icon.svg" alt="">
+                                    <div class="menu-item-hidden">
+                                        <h5>Fiber Landing Page</h5>
+                                        <p>An online portfolio generator. Great to practice flex/grid
+                                            layouts, absolute for positioning.</p>
+                                        </div>
+                                    </li>
+                                    <li><img src="Assets/Gradie_Icon.svg" alt="">
+                                        <div class="menu-item-hidden">
+                                            <h5>Gradie Signup Page</h5>
+                                            <p>Gradie is a simple sign up page, great to practice centering layout</p>
+                                        </div>
+                                    </li>
+                                </ul> -->
+                    <li class="menu-list-mobile item-2">Challenges</li>
+                    <li class="menu-list-mobile item-3">Resources</li>
+                    <li class="menu-list-mobile item-4">Other</li>
+                </ul>
+            </div>
         </ul>
     </nav>
     <main id="content">
@@ -53,7 +93,7 @@
             <div class="info-text">
                 <h1>Ondeck is your remote <span>conference calling tool</span></h1>
                 <p>Ondeck is a service that allows you to create beautiful, online, and encrypted video calls for you
-                    and remote team</p>
+                    and remote team.</p>
                 <a href="#" class="primary-btn">Try for free</a>
             </div>
             <div class="info-list">
